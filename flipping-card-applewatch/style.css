@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: poppins;
+	background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21,#23d5ab);
+	background-size: 300% 300%;
+	animation: color 7s ease-in-out infinite;
+}
+
+@keyframes color {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.wrapper, .single-card {
+	height: 450px;
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper {
+	perspective: 900px;
+}
+.single-card {
+	text-align: center;
+	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+	transform-style: preserve-3d;
+}
+.wrapper:hover .single-card {
+	transform: rotateY(180deg);
+}
+.front, .back {
+	width: 350px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.front {
+	cursor: pointer;
+	height: 90%;
+	background-image: url(1.jpg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center center;
+}
+.back {
+	transform: rotateY(180deg);
+	position: absolute;
+	border-radius: 50px;
+	height: 450px;
+	background: #fff;
+}
+.content {
+	padding-top: 25%;
+}
+.content h2 {
+	color: #22C1C3;
+	font-family: 'Anton', sans-serif;
+	font-size: 35px;
+	margin: 0;
+	font-weight: 300;
+}
+.content h4 {
+	color: #29E979;
+	margin: 0;
+}
+.socials {
+	margin-top: 20%;
+}
+.socials i {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 30px;
+	margin: 0 10px;
+}
+
+p {
+	color: #070765;
+	font-weight: bold;
+}
+
+.wrapper1, .single-card1 {
+	height: 450px;
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper1 {
+	perspective: 900px;
+}
+.single-card1 {
+	text-align: center;
+	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+	transform-style: preserve-3d;
+}
+.wrapper1:hover .single-card1 {
+	transform: rotateY(180deg);
+}
+.front1, .back1 {
+	width: 350px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.front1 {
+	cursor: pointer;
+	height: 90%;
+	background-image: url(2.jpg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center center;
+}
+.back1 {
+	transform: rotateY(180deg);
+	position: absolute;
+	border-radius: 50px;
+	height: 450px;
+	background: #fff;
+}
+.content1 {
+	padding-top: 25%;
+}
+.content1 h2 {
+	color: #22C1C3;
+	font-family: 'Anton', sans-serif;
+	font-size: 35px;
+	margin: 0;
+	font-weight: 300;
+}
+.content1 h4 {
+	color: #29E979;
+	margin: 0;
+}
+.socials1 {
+	margin-top: 20%;
+}
+.socials1 i {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 30px;
+	margin: 0 10px;
+}
+
+.socials button {
+	font-family: 'Alfa Slab One', cursive;
+	padding: 10px 20px;
+	width: 200px;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,84,0.8872408826811975) 100%);
+	color: #fafafa;
+	box-shadow: 0 6px 8px rgba(0,0,0,.1);
+	border-radius: 50px;
+	transition: .4s;
+}
+
+
+.socials button:hover {
+	border-radius: 90%;
+}
+
+.socials1 button {
+	font-family: 'Alfa Slab One', cursive;
+	padding: 10px 20px;
+	width: 200px;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,84,0.8872408826811975) 100%);
+	color: #fafafa;
+	box-shadow: 0 6px 8px rgba(0,0,0,.1);
+	border-radius: 50px;
+	transition: .4s;
+}
+
+
+.socials1 button:hover {
+	border-radius: 90%;
+}
